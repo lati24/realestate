@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate DApp</title>
+</head>
+<body>
+    <h1>Real Estate DApp</h1>
+
+    <h2>List a Property</h2>
+    <div>
+        Description: <input type="text" id="description"><br>
+        Location: <input type="text" id="location"><br>
+        Price: <input type="number" id="price"><br>
+        <button onclick="listProperty()">List Property</button>
+    </div>
+
+    <h2>Update Property</h2>
+    <div>
+        Property ID: <input type="number" id="updatePropertyId"><br>
+        New Description: <input type="text" id="newDescription"><br>
+        New Location: <input type="text" id="newLocation"><br>
+        New Price: <input type="number" id="newPrice"><br>
+        <button onclick="updateProperty()">Update Property</button>
+    </div>
+
+    <h2>Delete Property</h2>
+    <div>
+        Property ID: <input type="number" id="deletePropertyId"><br>
+        <button onclick="deleteProperty()">Delete Property</button>
+    </div>
+
+    <h2>Buy Property</h2>
+    <div>
+        Property ID: <input type="number" id="buyPropertyId"><br>
+        <button onclick="buyProperty()">Buy Property</button>
+    </div>
+
+    <script src="web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
